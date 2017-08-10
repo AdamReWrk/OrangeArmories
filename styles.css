@@ -67,8 +67,8 @@ h3 {
     float: left;
     margin-right: 30px;
     box-sizing: border-box;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 
 
@@ -544,6 +544,15 @@ h3 {
     
 #shopingcart {
     margin-right: 50px;
+}
+    
+    
+/* Logo
+-------------------------------*/
+    
+.logo {
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
     
     
