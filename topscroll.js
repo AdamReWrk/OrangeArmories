@@ -45,8 +45,16 @@ $(window).scroll(function(){
 });
 
 
+/*
 window.onload = function(){
 $( "#toggle" ).click(function() {
   $( "#navigation" ).toggleClass( "nav-open" );
 });
 };
+*/
+
+$(document).ready(function(){
+    $('#toggle').on('click touchstart', function() {
+        $( "#navigation" ).toggleClass( "nav-open" );
+    });
+});
