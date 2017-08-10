@@ -136,6 +136,16 @@ h3 {
     opacity:1;
 }
 
+.navlabel {
+    font-size: 26px;
+    color: #f74604;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 18px;
+    font-weight: bold;
+    display:none;
+}
+
 
 /* Mega Menu
 ----------------------------------*/
@@ -543,6 +553,14 @@ h3 {
     
 #shopingcart {
     margin-right: 50px;
+}
+    
+.navlabel {
+    display:block;
+}
+    
+.toplevel {
+    padding-top: 21px;
 }
     
     
