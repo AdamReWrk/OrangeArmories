@@ -500,6 +500,7 @@ h3 {
     padding-left: 20px;
     padding-right: 20px;
     transition: 300ms ease-in-out;
+    padding-bottom: 50px;
 }
     
 #navigation.nav-open {
@@ -512,6 +513,7 @@ h3 {
     
 #nav {
     flex-direction: column;
+    overflow: scroll;
 }
     
 #nav li {
@@ -561,6 +563,10 @@ h3 {
     
 .toplevel {
     padding-top: 21px;
+}
+    
+.toplevel.scrolled {
+    padding-top: 11px;
 }
     
     
