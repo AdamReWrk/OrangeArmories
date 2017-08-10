@@ -497,8 +497,7 @@ h3 {
 }
     
 #navigation.nav-open #toggle {
-    position: relative;
-    left: 0;
+    background-color: rgba(31, 31, 31, 0.95);
 }
     
 #nav {
