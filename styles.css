@@ -286,6 +286,14 @@ h3 {
     padding-bottom: 125px;
 }
 
+#internalpagebanner{
+    position:relative;
+    background: url(https://adamrewrk.github.io/OrangeArmories/Images/Banner/Military-Man-Walking.jpg) no-repeat top center;
+    background-size: cover;
+    padding-top: 125px;
+    padding-bottom: 75px;
+}
+
 #bannerinner {
     width: 100%;
     max-width: 1100px;
@@ -344,7 +352,18 @@ h3 {
     background: #fff;
     padding-top: 50px;
     padding-bottom: 50px;
-    height:500px;
+    width:100%;
+    max-width:1200px;
+    padding-left: 5%;
+    padding-right:5%;
+    box-sizing:border-box;
+}
+
+#contentcat{
+    width:25%;
+    float:left;
+    box-sizing:border-box;
+    padding:2%;
 }
 
 
