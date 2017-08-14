@@ -125,17 +125,6 @@ h3 {
     color: #CF5300;
 }
 
-
-#megamenu {
-    opacity:0;
-    display:none;
-}
-
-#nav li:hover ul {
-    display:block;
-    opacity:1;
-}
-
 .navlabel {
     font-size: 26px;
     color: #f74604;
@@ -152,7 +141,7 @@ h3 {
 
 #megamenu {
     position: absolute;
-    top: 100px;
+    top: -350px;
     width: 80%;
     background: rgba(31, 31, 31, 0.95);
     margin: auto!important;
@@ -164,10 +153,17 @@ h3 {
     padding-left: 0px;
     padding: 2%;
     z-index: -3;
+    opacity:0;
 }
 
-#megamenu.scrolled {
-    top: 80px;
+.toplevel:hover #megamenu {
+    top:100px;
+    opacity:1;
+}
+
+.toplevel:hover #megamenu.scrolled {
+    top:80px;
+    opacity:1;
 }
 
 .megamenucol {
@@ -437,6 +433,10 @@ h3 {
     padding:3%;
 }
 
+#content.productpage{
+    padding-top:150px;
+}
+
 
 /* Breadcrumb
 ---------------------------------*/
@@ -474,6 +474,69 @@ h3 {
     box-sizing: border-box;
     padding: 3%;
     position: relative;
+}
+
+
+/* Product Pages
+---------------------------------------*/
+
+#productdescriptionbox {
+    width: 45%;
+    float: left;
+}
+
+#productshortdesc {
+    margin-bottom: 20px;
+}
+
+#productprice {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #cf5300;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+}
+
+#productoptions {
+    background: #f6f6f6;
+    padding: 7.5%;
+    display: inline-block;
+    width: 100%;
+}
+
+#productoptions h3 {
+    margin-top: 0px;
+}
+
+#productoptions h4 {
+    width: initial;
+    float: left;
+    position: relative;
+    display: inline-block;
+    margin-top: 6px;
+    margin-right: 10px;
+    color: #cf5300;
+    margin-bottom: 6px;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+select.styledropdown {
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #cf5300;
+    border-radius: 0px!important;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+#option {
+    width: initial;
+    float: left;
+    padding: 2%;
 }
 
 
