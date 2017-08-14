@@ -2,9 +2,9 @@
 $(window).scroll(function(){    
     var scroll = $(window).scrollTop();
     if (scroll >= 50) {
-        $("#header, #logo, #toggle, .toplevel, #megamenu").addClass("scrolled");
+        $("#header, #logo, #toggle, .toplevel, #megamenu, #shopingcartli").addClass("scrolled");
     } else {
-        $("#header, #logo, #toggle, .toplevel, #megamenu").removeClass("scrolled");
+        $("#header, #logo, #toggle, .toplevel, #megamenu, #shopingcartli").removeClass("scrolled");
     }
 });
 

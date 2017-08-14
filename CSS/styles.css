@@ -202,11 +202,25 @@ h3 {
 /* Shopping Cart Section
 ------------------------------------*/
 
+#shopingcatholder {
+    margin: auto;
+    box-sizing: border-box;
+    float: right;
+    height: 100%;
+}
+
 #shopingcart {
     margin: auto;
     box-sizing: border-box;
     float: right;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+#shopingcartli {
     display: flex;
     justify-content: center;
 }
@@ -221,6 +235,61 @@ h3 {
 
 .cart:hover {
     color: #cf5300;
+}
+
+#cartpopout {
+    height: initial;
+    width: 300px;
+    display: block;
+    position: absolute;
+    background-color: rgba(31, 31, 31, 0.95);
+    top: 0px;
+    opacity: 0;
+    transition: 300ms ease-in-out;
+    z-index: -1;
+    list-style: none;
+    padding-left: 0px;
+    padding: 1%;
+    right: 0;
+}
+
+#shopingcartli:hover #cartpopout{
+    top:100px;
+    opacity:1;
+}
+
+#shopingcartli.scrolled:hover #cartpopout{
+    top:80px;
+    opacity:1;
+}
+
+
+#cartbutton {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
+.viewcart {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #cd5318;
+    font-family: 'Oswald', sans-serif;
+    padding: 2.5%;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 10px;
+    display: inline-block;
+    transition: 200ms linear;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.viewcart:hover {
+    opacity: 0.8;
 }
 
 
@@ -282,7 +351,7 @@ h3 {
     position: relative;
     background: url(https://adamrewrk.github.io/OrangeArmories/Images/Banner/Military-Man-Walking.jpg) no-repeat top center;
     background-size: cover;
-    padding-top: 200px;
+    padding-top: 175px;
     padding-bottom: 125px;
 }
 
