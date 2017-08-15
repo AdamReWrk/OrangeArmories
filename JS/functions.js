@@ -14,3 +14,9 @@ $(document).ready(function(){
         $( "#navigation" ).toggleClass( "nav-open" );
     });
 });
+
+
+/*-------------- Calling Owl Carosel ----------------*/
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});

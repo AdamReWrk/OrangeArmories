@@ -540,6 +540,18 @@ select.styledropdown {
 }
 
 
+/* Product Image Galery
+-------------------------------------*/
+
+#productimagegallery {
+    width: 50%;
+    float: right;
+    padding: 3%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
 /* Subfooter Section
 ---------------------------------------*/
 
