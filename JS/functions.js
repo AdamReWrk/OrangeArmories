@@ -10,10 +10,10 @@ $(window).scroll(function(){
 
 /*-------------- Navigation Slideout ----------------*/
 $(document).ready(function(){
-    $('#toggle').on('click touchstart', function() {
+    $('#toggle').on('click', function() {
         $( "#navigation" ).toggleClass( "nav-open" );
     });
-    $('#shopingcartli').on('click touchstart', function() {
+    $('#shopingcartli').on('click', function() {
         $( "#cartpopout" ).toggleClass( "cart-open" );
     });
 });
