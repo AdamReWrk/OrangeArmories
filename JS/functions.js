@@ -13,7 +13,7 @@ $(document).ready(function(){
     $('#toggle').on('click touchstart', function() {
         $( "#navigation" ).toggleClass( "nav-open" );
     });
-    $('#shopingcartli').onClick(function() {
+    $('#shopingcartli').on('click touchstart', function() {
         $( "#cartpopout" ).toggleClass( "cart-open" );
     });
 });
