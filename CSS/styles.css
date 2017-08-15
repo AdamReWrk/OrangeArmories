@@ -469,13 +469,31 @@ h3 {
 -------------------------------------*/
 
 #prodcat {
-    width: 50%;
+    width: 45%;
     float: left;
     box-sizing: border-box;
     padding: 3%;
     position: relative;
+    margin:2.5%;
+    height:450px;
 }
 
+
+.weapons{
+    background-image:url(https://adamrewrk.github.io/OrangeArmories/Images/Product-Catagories/Weapons.jpg);
+}
+
+.ammunation{
+    background-image:url(https://adamrewrk.github.io/OrangeArmories/Images/Product-Catagories/Ammunation.jpg);
+}
+
+.protectivegear{
+    background-image:url(https://adamrewrk.github.io/OrangeArmories/Images/Product-Catagories/Protective-Wear.jpg);
+}
+
+.accessories{
+    background-image:url(https://adamrewrk.github.io/OrangeArmories/Images/Product-Catagories/Accessories.jpg);
+}
 
 /* Product Pages
 ---------------------------------------*/
