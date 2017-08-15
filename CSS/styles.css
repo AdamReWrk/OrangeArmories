@@ -223,10 +223,11 @@ h3 {
 
 .cart {
     color: #fff;
-    font-size: 20px;
+    font-size: 26px!important;
     margin: auto;
-    line-height: 20px;
+    line-height: 26px!important;
     transition: 200ms linear;
+    padding-left: 15px;
 }
 
 .cart:hover {
@@ -239,23 +240,25 @@ h3 {
     display: block;
     position: absolute;
     background-color: rgba(31, 31, 31, 0.95);
-    top: 0px;
+    top: 100px;
     opacity: 0;
     transition: 300ms ease-in-out;
     z-index: -1;
     list-style: none;
     padding-left: 0px;
     padding: 1%;
-    right: 0;
+    right: -350px;
+    max-width:100%;
 }
 
-#shopingcartli:hover #cartpopout{
-    top:100px;
+#cartpopout.cart-open{
+    right:0px;
     opacity:1;
 }
 
-#shopingcartli.scrolled:hover #cartpopout{
+#shopingcartli.scrolled #cartpopout.cart-open{
     top:80px;
+    right:0px;
     opacity:1;
 }
 
@@ -873,6 +876,11 @@ select.styledropdown {
     
 .toplevel.scrolled {
     padding-top: 11px;
+}
+    
+.toplevel:hover #megamenu {
+    top: 0px;
+    opacity: 1;
 }
     
     
