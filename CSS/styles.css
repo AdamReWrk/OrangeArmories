@@ -656,6 +656,7 @@ button.addtobasket:hover {
     padding: 7.5%;
     display: inline-block;
     width: 100%;
+    box-sizing: border-box;
 }
 
 #productoptions h3 {
@@ -695,6 +696,38 @@ select.styledropdown {
 #productdescription {
     width: 100%;
     display: inline-block;
+    margin-top: 50px;
+}
+
+#prodspecs {
+    width: 45%;
+    float: right;
+    background: #f6f6f6;
+    padding: 2%;
+    box-sizing: border-box;
+    margin: 2.5%;
+}
+
+#spectable {
+    list-style: none;
+    width: 100%;
+    position: relative;
+    padding: 0px;
+    display: inline-block;
+}
+
+#specitem {
+    width: 33%;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100px;
+}
+
+#specitem strong {
+    color: #cf5300;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
 }
 
 
