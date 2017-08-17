@@ -21,7 +21,16 @@ $(document).ready(function(){
 
 /*-------------- Calling Owl Carosel ----------------*/
 $(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
+  $('.custom1').owlCarousel({
+    animateOut: 'fadeIn',
+    animateIn: 'fadeInLeft',
+    items:1,
+    margin:30,
+    stagePadding:30,
+    smartSpeed:450,
+    autoplay:true,
+    loop:true
+});
 });
 
 
