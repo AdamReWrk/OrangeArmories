@@ -9,8 +9,9 @@ body {
 
 #main {
     width: 100%;
-    background: #f6f6f6;
+    background: #fff;
     position: relative;
+    display: inline-grid;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -240,6 +241,7 @@ h3 {
     display: block;
     position: absolute;
     background-color: rgba(31, 31, 31, 0.95);
+    border-top: 2px solid #f74604;
     top: 100px;
     opacity: 0;
     transition: 300ms ease-in-out;
@@ -294,9 +296,11 @@ h3 {
 #cartitem {
     height: 100%;
     position: relative;
-    display: inline-block;
+    display: table-row;
     border-bottom: 1px solid #fff;
     padding-bottom: 10px;
+    list-style: none;
+    padding: 0px;
 }
 
 #cartitem:first-of-type {
@@ -306,8 +310,11 @@ h3 {
 
 #cartitemimage {
     width: 25%;
-    float: left;
-    margin: 2.5%;
+    vertical-align: middle;
+    display: table-cell;
+    float: none;
+    padding: 3%;
+    border-bottom: 1px solid #fff;
 }
 
 img.cartimage {
@@ -318,15 +325,20 @@ img.cartimage {
 
 #cartitemdesc {
     width: 55%;
-    float: left;
+    float: none;
     color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    border-bottom: 1px solid #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #cartitemdesc h3 {
     margin: 5px;
     color: #cd5318;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 20px;
 }
 
 #cartitemdesc p {
@@ -336,13 +348,15 @@ img.cartimage {
 
 #cartitemprice {
     width: 10%;
-    float: left;
+    float: none;
     position: relative;
     font-family: 'Oswald', sans-serif;
     color: #fff;
     height: 100%;
-    display: inline-block;
     padding-top: 10px;
+    display: table-cell;
+    vertical-align: middle;
+    border-bottom: 1px solid #fff;
 }
 
 
@@ -402,7 +416,7 @@ img.cartimage {
 
 #banner {
     position: relative;
-    background: url(https://adamrewrk.github.io/OrangeArmories/Images/Banner/Military-Man-Walking.jpg) no-repeat top center;
+    background: url(https://adamrewrk.github.io/OrangeArmories/Images/Banner/Military-Man-Walking.jpg) no-repeat fixed top center;
     background-size: cover;
     padding-top: 175px;
     padding-bottom: 125px;
@@ -481,6 +495,7 @@ img.cartimage {
     box-sizing: border-box;
     position: relative;
     display: inline-block;
+    margin: auto;
 }
 
 #contentcat{
@@ -532,8 +547,8 @@ img.cartimage {
     padding: 5%;
     position: relative;
     margin: 2.5%;
-    height: 45vw;
-    background-size: 120%;
+    height: 450px;
+    background-size: cover;
     padding-left: 0px;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
     transition: 200ms linear;
@@ -541,8 +556,7 @@ img.cartimage {
 }
 
 #prodcat:hover {
-    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.5);
-    background-size: 130%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #catagorytitle {
@@ -557,7 +571,7 @@ img.cartimage {
     height: fit-content;
     line-height: 5vw;
     position: relative;
-    margin-top: 75%;
+    margin-top: 200px;
 }
 
 
