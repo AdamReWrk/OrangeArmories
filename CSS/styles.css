@@ -11,14 +11,15 @@ body {
     width: 100%;
     background: #fff;
     position: relative;
-    display: inline-grid;
+    display:inline-block;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
-    text-transform:uppercase;
+    text-transform: uppercase;
+    border-bottom: 2px solid #cc5318;
+    padding-bottom: 10px;
 }
-
 
 /* Text Styles
 ------------------------------------------*/
@@ -489,12 +490,17 @@ img.cartimage {
     padding-top: 50px;
     padding-bottom: 50px;
     width: 100%;
-    max-width: 1200px;
     padding-left: 5%;
     padding-right: 5%;
     box-sizing: border-box;
     position: relative;
     display: inline-block;
+    margin: auto;
+}
+
+#contentinner {
+    position: relative;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -699,13 +705,19 @@ select.styledropdown {
     margin-top: 50px;
 }
 
+
+#prodlongdescription {
+    width: 50%;
+    padding: 2.5%;
+    box-sizing: border-box;
+}
+
 #prodspecs {
     width: 45%;
     float: right;
     background: #f6f6f6;
-    padding: 2%;
+    padding: 2.5%;
     box-sizing: border-box;
-    margin: 2.5%;
 }
 
 #spectable {
@@ -722,6 +734,7 @@ select.styledropdown {
     box-sizing: border-box;
     position: relative;
     min-height: 100px;
+    text-align: center;
 }
 
 #specitem strong {
@@ -981,6 +994,29 @@ select.styledropdown {
 .logo {
     padding-top: 3%;
     padding-bottom: 3%;
+}
+    
+    
+/* Product Page Catagories
+-------------------------------*/
+    
+#productimagegallery {
+    width: 100%;
+    float: none;
+}
+    
+#productdescriptionbox {
+    width: 100%;
+    float: none;
+}
+    
+#prodspecs {
+    width: 100%;
+    float: none;
+}
+    
+#prodlongdescription {
+    width: 100%;
 }
     
     
