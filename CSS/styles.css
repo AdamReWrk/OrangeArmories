@@ -865,6 +865,7 @@ select.styledropdown {
 #productlayoutimage img {
     width: 100%;
     position: relative;
+    max-height: 100%;
 }
 
 #productlayouttitle {
