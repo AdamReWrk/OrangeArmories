@@ -424,7 +424,7 @@ img.cartimage {
 #banner {
     position: relative;
     background: url(https://adamrewrk.github.io/OrangeArmories/Images/Banner/Military-Man-Walking.jpg) no-repeat fixed top center;
-    background-size: cover;
+    background-size: 150%;
     padding-top: 175px;
     padding-bottom: 125px;
 }
