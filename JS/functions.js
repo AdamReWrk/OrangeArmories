@@ -36,7 +36,20 @@ $(document).ready(function(){
 
 /*-------------- Paralax Banner ------------------------*/
 $(window).scroll(function() {
-    var y = $(this).scrollTop(); // Pos
-    var r = -3; // Rate
-    $('#banner').css('background-position', 'center ' + parseInt(y/r) + 'px'); // Switch x polarity to reverse direction
+    var y = $(this).scrollTop();
+    var r = -3; // Speed
+    $('#banner').css('background-position', 'center ' + parseInt(y/r) + 'px');
 });
+
+
+/* Scroll Anitmations
+------------------------------------*/
+
+$(document).on('scroll.something', function() {
+    if ($(this).scrollBottom() >= $('#prodlongdescription').position().bottom) {
+        $("#prodlongdescription").addClass("pastpoint")
+
+        //Unbind the event
+        $(document).off('scroll.something')
+    }
+})

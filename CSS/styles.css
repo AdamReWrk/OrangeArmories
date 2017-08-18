@@ -17,8 +17,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    border-bottom: 2px solid #cc5318;
     padding-bottom: 10px;
+}
+
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+    background: #f6f6f6;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-top: 2px solid #cc5318;
 }
 
 /* Text Styles
@@ -525,6 +531,7 @@ img.cartimage {
     font-family: 'Oswald', sans-serif;
     background: #f6f6f6;
     padding: 1.5%;
+    border-top: 2px solid #cf5300;
 }
 
 .breadcrumbItem {
@@ -669,7 +676,7 @@ button.addtobasket:hover {
     margin-top: 0px;
 }
 
-#productoptions h4 {
+#productoptions strong {
     width: initial;
     float: left;
     position: relative;
@@ -680,6 +687,8 @@ button.addtobasket:hover {
     margin-bottom: 6px;
     font-size: 13px;
     line-height: 13px;
+    font-family: 'Oswald', sans-serif;
+    text-transform:uppercase;
 }
 
 select.styledropdown {
@@ -754,6 +763,77 @@ select.styledropdown {
     box-sizing: border-box;
     overflow: hidden;
 }
+
+
+
+/* Shopping Basket Page
+-------------------------------------*/
+
+#shoppingbasketouter {
+    width: 100%;
+    display: inline-block;
+}
+
+#shoppingheaders, #shoppingitem {
+    list-style: none;
+    padding-left: 0px;
+    width: 100%;
+    position: relative;
+    margin: 0px;
+    display: inline-table;
+}
+
+#shoppingheaders li, #shoppingitem li {
+    display: inline-block;
+    padding: 1%;
+    box-sizing: border-box;
+    float: left;
+}
+
+#shoppingheaders li {
+    border-top: 2px solid #cf5300;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    float: left;
+    background: #f6f6f6;
+}
+
+#shoppingitem li {
+    border-left: 1px solid #f6f6f6;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+#shoppingitem li:last-child {
+    border-right: 1px solid #f6f6f6;
+}
+
+#itemdescription{
+    width:50%;
+}
+
+#itemid, #itemprice, #itemquantity, #itempricetotal, #itemremove{
+    width: 10%;
+}
+
+#shoppingitem #itemremove, #shoppingitem #itemprice, #shoppingitem #itemquantity{
+    text-align:center;
+}
+
+#removeitem {
+    background: transparent;
+    border: 0px;
+    color: red;
+    font-size: 16px;
+    line-height: 16px;
+    transition: 200ms linear;
+}
+
+#removeitem:hover {
+    color: #333;
+    cursor: pointer;
+}
+
+
 
 
 /* Subfooter Section
@@ -1038,7 +1118,16 @@ select.styledropdown {
     font-size: 30px;
     line-height: 50px;
     margin-top: 250px;
-}  
+}
+    
+    
+    /* Shopping Cart Page
+    ----------------------------*/
+    
+    #shoppingheaders li, #shoppingitem li {
+    font-size: 1.5vw;
+    line-height: 3vw;
+}
     
     
 /* Subfooter 
