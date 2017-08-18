@@ -16,6 +16,17 @@ $(document).ready(function(){
     $('#shopingcartli').on('click', function() {
         $( "#cartpopout" ).toggleClass( "cart-open" );
     });
+    
+    /* Product And Search Pages filters toggle -----------*/
+    $('#productleftbartoggle').on('click', function() {
+        $( ".fa.fa-arrow-circle-down" ).toggleClass( "selected" );
+    });
+    $('#productleftbartoggle').on('click', function() {
+        $( ".fa.fa-minus-circle" ).toggleClass( "selected" );
+    });
+    $('#productleftbartoggle').on('click', function() {
+        $( "#productgridleft" ).toggleClass( "visable" );
+    });
 });
 
 

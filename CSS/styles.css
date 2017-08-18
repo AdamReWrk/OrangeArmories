@@ -766,6 +766,153 @@ select.styledropdown {
 
 
 
+
+/* Products Layout Page / Search landing page
+---------------------------------------*/
+
+#productgridleft {
+    width: 25%;
+    float: left;
+    position: relative;
+    display: inline-block;
+    transition:300ms ease-in-out;
+}
+
+#leftsidebartitle h4:first-of-type {
+    margin-top: 10px;
+}
+
+#productgridleft.visable{
+    height:100%;
+}
+
+#productleftbartoggle {
+    background: #f6f6f6;
+    border: 0px;
+    border-top: 2px solid #cd5318;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+    width: 100%;
+    text-align: left;
+    display:none;
+}
+
+
+#searchtoggledownarrow {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+}
+
+#searchtoggledownarrow i.fa.fa-arrow-circle-down {
+    display: block;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+#searchtoggledownarrow i.fa.fa-minus-circle {
+    display: none;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+#searchtoggledownarrow i.fa.fa-arrow-circle-down.selected {
+    display: none;
+}
+
+#searchtoggledownarrow i.fa.fa-minus-circle.selected {
+    display: block;
+}
+
+
+#productgridright {
+    width: 74%;
+    float: left;
+    display: inline-block;
+    margin-left: 1%;
+}
+
+#productlayout {
+    width: 30%;
+    float: left;
+    display: inline-block;
+    background: #f6f6f6;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    border-top: 2px solid #cd5318;
+    box-sizing: border-box;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: 200ms linear;
+}
+
+#productlayout:hover {
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+#productlayoutimage {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: #fff;
+}
+
+#productlayoutimage img {
+    width: 100%;
+    position: relative;
+}
+
+#productlayouttitle {
+    color: #cd5318;
+    font-family: 'Oswald', sans-serif;
+    border-top: 2px solid #cd5318;
+    text-align: center;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#productlayoutprice {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+#productlayoutspecs {
+    background: #cd5318;
+    color: #fff;
+    padding: 3%;
+    margin-top: 10px;
+}
+
+#productspecslist {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    display: inline-table;
+    width: 100%;
+    text-align: center;
+}
+
+#producspecitem {
+    width: 50%;
+    float: left;
+    display: table-cell;
+    position: relative;
+}
+
 /* Shopping Basket Page
 -------------------------------------*/
 
@@ -972,6 +1119,12 @@ select.styledropdown {
 
 @media screen and (max-width:1024px) and (min-width:768px){
     
+    /* Product Layout / Search Results
+    ---------------------------------------*/
+    
+    #productlayout {
+        width: 47%;
+    }
 }
 
 
@@ -1076,6 +1229,19 @@ select.styledropdown {
 }
     
     
+/* Banner
+    ----------------------*/
+    
+    #banner{
+        padding-top: 110px;
+        padding-bottom: 60px;
+    }
+    
+    #bannercol {
+        width: 100%;
+    }
+    
+    
 /* Product Page Catagories
 -------------------------------*/
     
@@ -1118,6 +1284,45 @@ select.styledropdown {
     line-height: 50px;
     margin-top: 250px;
 }
+    
+    
+    /* Product Layout / Search Results
+    ---------------------------------------*/
+    
+    #productlayout {
+        width: 97%;
+    }
+    
+    /* Product Layrout right
+    ---------------------------------*/
+    
+    #productgridright {
+    width: 100%;
+    float: none;
+    margin-left: 0%;
+}
+    
+    /* Product Layout left bar
+    ------------------------------------*/
+    
+    
+    #productleftbartoggle{
+        display:block;
+    }
+    
+    #productgridleft {
+        width: 100%;
+    }
+    
+    #leftsidebartitle h4:first-of-type {
+        margin-top: 0px;
+    }
+    
+    #productgridleft {
+        height: 0px;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
     
     
     /* Shopping Cart Page
