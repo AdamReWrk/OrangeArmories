@@ -246,23 +246,24 @@ h3 {
     height: initial;
     width: 350px;
     display: block;
-    position: absolute;
+    position: fixed;
     background-color: rgba(31, 31, 31, 0.95);
     border-top: 2px solid #f74604;
     top: 100px;
     opacity: 0;
     transition: 300ms ease-in-out;
-    z-index: -1;
     list-style: none;
     padding-left: 0px;
     padding: 1%;
-    right: -350px;
-    max-width:100%;
+    right: -1000px;
+    max-width: 100%;
+    z-index: -1;
 }
 
-#cartpopout.cart-open{
-    right:0px;
-    opacity:1;
+#cartpopout.cart-open {
+    right: 0px;
+    opacity: 1;
+    position: absolute;
 }
 
 #shopingcartli.scrolled #cartpopout.cart-open{
