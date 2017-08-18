@@ -784,10 +784,9 @@ select.styledropdown {
 }
 
 #shoppingheaders li, #shoppingitem li {
-    display: inline-block;
+    display: table-cell;
     padding: 1%;
     box-sizing: border-box;
-    float: left;
 }
 
 #shoppingheaders li {
