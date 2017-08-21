@@ -861,6 +861,12 @@ select.styledropdown {
     width: 100%;
     height: 250px;
     background: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+#productlayoutimageholder {
+    margin: auto;
 }
 
 #productlayoutimage img {
