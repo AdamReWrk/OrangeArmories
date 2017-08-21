@@ -2,9 +2,9 @@
 $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     if (scroll >= 50) {
-        $("#header, #logo, #toggle, .toplevel, #megamenu, #shopingcartli").addClass("scrolled");
+        $("#header, #logo, #toggle, .toplevel, #megamenu, #shopingcartli, #headersearchbox").addClass("scrolled");
     } else {
-        $("#header, #logo, #toggle, .toplevel, #megamenu, #shopingcartli").removeClass("scrolled");
+        $("#header, #logo, #toggle, .toplevel, #megamenu, #shopingcartli, #headersearchbox").removeClass("scrolled");
     }
 });
 
@@ -13,11 +13,23 @@ $(document).ready(function(){
     $('#toggle').on('click', function() {
         $( "#navigation" ).toggleClass( "nav-open" );
     });
-    $('#shopingcartli').on('click', function() {
+    
+    /* Shopping Cart Toggle
+    ----------------------------*/
+    
+    $('#shoppingcarttoggle').on('click', function() {
         $( "#cartpopout" ).toggleClass( "cart-open" );
     });
     
-    /* Product And Search Pages filters toggle -----------*/
+    /* Header Search
+    -----------------------------*/
+    
+    $('.headersearcha').on('click', function() {
+        $( "#headersearchbox" ).toggleClass( "search-open" );
+    });
+    
+    /* Product And Search Pages filters toggle 
+    ----------------------------------*/
     $('#productleftbartoggle').on('click', function() {
         $( ".fa.fa-arrow-circle-down" ).toggleClass( "selected" );
     });
