@@ -91,4 +91,13 @@ $(document).on('scroll.something', function() {
         //Unbind the event
         $(document).off('scroll.something')
     }
-})
+});
+
+
+/* Cart Pulse Function
+-------------------------------*/
+$(document).ready(function(){
+    if( $('#cartpopout ul').length >= 1 ){
+        $(".pulse-shadow").addClass("visbale")
+    }
+});

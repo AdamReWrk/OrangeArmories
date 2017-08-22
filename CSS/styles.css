@@ -452,6 +452,12 @@ img.cartimage {
     top: 50px;
     margin-left: 2px;
     z-index: -1;
+    transition: top 200ms linear;
+    display: none;
+}
+
+.pulse-shadow.visbale {
+    display: block;
 }
 
 .pulse-shadow.scrolled {
