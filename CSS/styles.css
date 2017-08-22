@@ -423,6 +423,57 @@ img.cartimage {
 }
 
 
+/* Shopping Cart Animation
+--------------------------------*/
+
+
+
+.pulseanimation {
+  margin:auto;
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(205,83,24,0.4);
+  animation: pulse 2s infinite;
+  -webkit-animation: pulse 2s infinite;
+  -mox-animation: pulse 2s infinite;
+  -o-animation: pulse 2s infinite;
+}
+.pulse:hover {
+  animation: none;
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(205,83,24,0.4);
+    box-shadow: 0 0 0 0 rgba(205,83,24,0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(205,83,24,0);
+      box-shadow: 0 0 0 10px rgba(205,83,24,0)!important;
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(205,83,24,0);
+      box-shadow: 0 0 0 0 rgba(205,83,24,0);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(205,83,24,0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(205,83,24,0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(205,83,24,0);
+  }
+}
+
+
 /* Header Social Icons
 -----------------------------------*/
 
