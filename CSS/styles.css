@@ -292,7 +292,6 @@ h3 {
     margin: auto;
     line-height: 26px!important;
     transition: 200ms linear;
-    position: relative;
 }
 
 .cart:hover {
@@ -452,6 +451,7 @@ img.cartimage {
     height: 1px;
     top: 50px;
     margin-left: 2px;
+    z-index: -1;
 }
 
 .pulse-shadow.scrolled {
