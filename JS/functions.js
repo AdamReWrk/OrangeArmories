@@ -2,9 +2,9 @@
 $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     if (scroll >= 50) {
-        $("#header, #logo, #toggle, .toplevel, #megamenu, #shopingcartli, #headersearchbox").addClass("scrolled");
+        $("#header, #logo, #toggle, .toplevel, #megamenu, #shopingcartli, #headersearchbox, .pulse-shadow").addClass("scrolled");
     } else {
-        $("#header, #logo, #toggle, .toplevel, #megamenu, #shopingcartli, #headersearchbox").removeClass("scrolled");
+        $("#header, #logo, #toggle, .toplevel, #megamenu, #shopingcartli, #headersearchbox, .pulse-shadow").removeClass("scrolled");
     }
 });
 
