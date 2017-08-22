@@ -14,6 +14,22 @@ $(document).ready(function(){
         $( "#navigation" ).toggleClass( "nav-open" );
     });
     
+    
+    /* Navigation Dropdown
+    ------------------------------*/
+    
+    $('.navheader').on('click', function() {
+        $( "#megamenu" ).toggleClass( "mega-open" );
+    });
+    
+    $('.navheader').on('click', function() {
+        $( "#headerdownarrow" ).toggleClass( "selected" );
+    });
+    
+    $('.navheader').on('click', function() {
+        $( "#headerminusarrow" ).toggleClass( "selected" );
+    });
+    
     /* Shopping Cart Toggle
     ----------------------------*/
     

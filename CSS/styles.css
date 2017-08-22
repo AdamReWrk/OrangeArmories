@@ -144,6 +144,51 @@ h3 {
 }
 
 
+.navheader{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 150ms linear;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.navheader:hover {
+    color: #CF5300;
+    cursor: pointer;
+}
+
+.navheader i.fa.fa-arrow-circle-down {
+    display: block;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.navheader i.fa.fa-minus-circle {
+    display: none;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.navheader i.fa.fa-arrow-circle-down.selected {
+    display: none;
+}
+
+.navheader i.fa.fa-minus-circle.selected {
+    display: block;
+}
+
+.navheader i {
+    display: inline-block;
+    float: right;
+    margin-left: 5px;
+    line-height: 34px!important;
+    font-size: 13px!important;
+}
+
+
 /* Mega Menu
 ----------------------------------*/
 
@@ -164,15 +209,20 @@ h3 {
     opacity:0;
 }
 
-.toplevel:hover #megamenu {
+
+
+#megamenu.mega-open {
     top:100px;
     opacity:1;
 }
 
-.toplevel:hover #megamenu.scrolled {
+#megamenu.scrolled.mega-open {
     top:80px;
     opacity:1;
 }
+
+
+
 
 .megamenucol {
     color: #fff;
