@@ -47,7 +47,7 @@ $(document).ready(function(){
     /* Product And Search Pages filters toggle 
     ----------------------------------*/
     $('#productleftbartoggle').on('click', function() {
-        $( ".fa.fa-arrow-circle-down" ).toggleClass( "selected" );
+        $( ".fa.fa-plus-circle" ).toggleClass( "selected" );
     });
     $('#productleftbartoggle').on('click', function() {
         $( ".fa.fa-minus-circle" ).toggleClass( "selected" );

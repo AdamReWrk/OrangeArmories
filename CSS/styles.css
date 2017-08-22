@@ -138,7 +138,7 @@ h3 {
     color: #f74604;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-    padding-bottom: 18px;
+    padding-bottom: 5px;
     font-weight: bold;
     display:none;
 }
@@ -160,7 +160,7 @@ h3 {
     cursor: pointer;
 }
 
-.navheader i.fa.fa-arrow-circle-down {
+.navheader i.fa.fa-plus-circle {
     display: block;
     font-size: 18px;
     line-height: 40px;
@@ -172,7 +172,7 @@ h3 {
     line-height: 40px;
 }
 
-.navheader i.fa.fa-arrow-circle-down.selected {
+.navheader i.fa.fa-plus-circle.selected {
     display: none;
 }
 
@@ -433,7 +433,7 @@ img.cartimage {
     height: 100%;
     display: flex;
     justify-content: center;
-    margin-right: 5%;
+    margin-right: 40px;
 }
 
 .headsocicon {
@@ -451,6 +451,20 @@ img.cartimage {
 }
 
 
+/* Left side slide social
+----------------------------------*/
+
+#sidebarsocial{
+    display: none;
+    margin-bottom: 10px;
+}
+
+#sidebarsocial .headsocicon {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 26px;
+    line-height: 44px;
+}
 
 /* Header Search Toggle
 ----------------------------------------*/
@@ -923,7 +937,6 @@ select.styledropdown {
     float: left;
     position: relative;
     display: inline-block;
-    transition:300ms ease-in-out;
 }
 
 #leftsidebartitle h4:first-of-type {
@@ -946,6 +959,12 @@ select.styledropdown {
     width: 100%;
     text-align: left;
     display:none;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+#productleftbartoggle:hover {
+    cursor: pointer;
 }
 
 
@@ -955,7 +974,7 @@ select.styledropdown {
     margin-right: 10px;
 }
 
-#searchtoggledownarrow i.fa.fa-arrow-circle-down {
+#searchtoggledownarrow i.fa.fa-plus-circle {
     display: block;
     font-size: 18px;
     line-height: 40px;
@@ -967,7 +986,7 @@ select.styledropdown {
     line-height: 40px;
 }
 
-#searchtoggledownarrow i.fa.fa-arrow-circle-down.selected {
+#searchtoggledownarrow i.fa.fa-plus-circle.selected {
     display: none;
 }
 
@@ -1375,6 +1394,15 @@ select.styledropdown {
 }
     
     
+/* Left side slide social
+----------------------------------*/
+
+#sidebarsocial{
+    display: block;
+}
+
+    
+    
 /* Logo
 -------------------------------*/
     
@@ -1504,4 +1532,15 @@ select.styledropdown {
 }
 
     
+}
+
+
+
+/* Mobile Small
+-----------------------*/
+
+@media screen and (max-width:465px) and (min-width:0px){
+    #headersocial {
+        display: none;
+    }
 }
